@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Monitoring Station</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+       .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+       .weather-data {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Monitoring Station</h1>
+        <div class="weather-data">
+            <p><strong>Temperature:</strong> <span id="temperature">--°C</span></p>
+            <p><strong>Humidity:</strong> <span id="humidity">--%</span></p>
+            <p><strong>Pressure:</strong> <span id="pressure">--hPa</span></p>
+        </div>
+        <button id="update-button">Update Data</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
